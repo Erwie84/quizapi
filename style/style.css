@@ -91,6 +91,7 @@ body {
 .pills {
   display: flex; }
   .pills > li {
+    background: #f7f7f7;
     height: 4.8rem;
     line-height: 4.8rem;
     flex: 1;
@@ -98,7 +99,6 @@ body {
     color: #444;
     font-size: 1.6rem; }
     .pills > li:nth-child(1) {
-      background: #f7f7f7;
       border-bottom: 0.4rem solid #26875d; }
       .pills > li:nth-child(1):hover {
         background: #26875d;
@@ -108,7 +108,6 @@ body {
         background: #26875d;
         color: #fff; }
     .pills > li:nth-child(2) {
-      background: #f7f7f7;
       border-bottom: 0.4rem solid #1f7f97; }
       .pills > li:nth-child(2):hover {
         background: #1f7f97;
@@ -118,7 +117,6 @@ body {
         background: #1f7f97;
         color: #fff; }
     .pills > li:nth-child(3) {
-      background: #f7f7f7;
       border-bottom: 0.4rem solid #25518f; }
       .pills > li:nth-child(3):hover {
         background: #25518f;
@@ -128,7 +126,6 @@ body {
         background: #25518f;
         color: #fff; }
     .pills > li:nth-child(4) {
-      background: #f7f7f7;
       border-bottom: 0.4rem solid #7140db; }
       .pills > li:nth-child(4):hover {
         background: #7140db;
@@ -138,7 +135,6 @@ body {
         background: #7140db;
         color: #fff; }
     .pills > li:nth-child(5) {
-      background: #f7f7f7;
       border-bottom: 0.4rem solid #af3980; }
       .pills > li:nth-child(5):hover {
         background: #af3980;
@@ -148,7 +144,6 @@ body {
         background: #af3980;
         color: #fff; }
     .pills > li:nth-child(6) {
-      background: #f7f7f7;
       border-bottom: 0.4rem solid #963b2f; }
       .pills > li:nth-child(6):hover {
         background: #963b2f;
@@ -156,6 +151,24 @@ body {
         cursor: pointer; }
       .pills > li:nth-child(6):active {
         background: #963b2f;
+        color: #fff; }
+    .pills > li:nth-child(7) {
+      border-bottom: 0.4rem solid #a66005; }
+      .pills > li:nth-child(7):hover {
+        background: #a66005;
+        color: #fff;
+        cursor: pointer; }
+      .pills > li:nth-child(7):active {
+        background: #a66005;
+        color: #fff; }
+    .pills > li:nth-child(8) {
+      border-bottom: 0.4rem solid #94a33d; }
+      .pills > li:nth-child(8):hover {
+        background: #94a33d;
+        color: #fff;
+        cursor: pointer; }
+      .pills > li:nth-child(8):active {
+        background: #94a33d;
         color: #fff; }
 
 .question-edit-box, .answer-edit-box {

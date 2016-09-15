@@ -9,7 +9,6 @@
 }
 
 @mixin pillstyle($color) {
-    background: $pill-color;
     border-bottom: 0.4rem solid darken($color, 10%);
     &:hover {
         background: darken($color, 10%);
@@ -26,6 +25,7 @@
     display: flex;
 
     > li {
+        background: $pill-color;
         height: $grid-h * 2;
         line-height: $grid-h * 2;
         flex: 1;
@@ -51,6 +51,12 @@
         &:nth-child(6){
             @include pillstyle($color6);
         }
+        &:nth-child(7){
+            @include pillstyle($color7);
+        }
+        &:nth-child(8){
+            @include pillstyle($color8);
+        } 
 
     }
 

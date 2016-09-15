@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 })
 export class QuestionComponent {
 
-    question: string = "Typ hier uw vraag ...";
+    question: string = "Enter your question ...";
     answer: string = "";
 
     constructor(){

@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var QuestionComponent = (function () {
     function QuestionComponent() {
-        this.question = "Typ hier uw vraag ...";
+        this.question = "Enter your question ...";
         this.answer = "";
     }
     QuestionComponent.prototype.questionUpdated = function (question) {
