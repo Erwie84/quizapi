@@ -1,0 +1,58 @@
+.form-group {
+    min-height: $grid-h;
+    margin-bottom: $grid-h;
+    label {
+        height: $grid-h;
+        line-height: $grid-h;
+        font-size: 1.6rem;
+    }
+}
+
+@mixin pillstyle($color) {
+    background: $pill-color;
+    border-bottom: 0.4rem solid darken($color, 10%);
+    &:hover {
+        background: darken($color, 10%);
+        color: $pill-active-text-color;
+        cursor: pointer;
+    }
+    &:active {
+        background: darken($color, 10%);
+        color: $pill-active-text-color;
+    }
+}
+
+.pills {
+    display: flex;
+
+    > li {
+        height: $grid-h * 2;
+        line-height: $grid-h * 2;
+        flex: 1;
+        text-align: center;
+        color: $pill-text-color;
+        font-size: 1.6rem;
+
+        &:nth-child(1){
+            @include pillstyle($color1);
+        }
+        &:nth-child(2){
+            @include pillstyle($color2);
+        }
+        &:nth-child(3){
+            @include pillstyle($color3);
+        }
+        &:nth-child(4){
+            @include pillstyle($color4);
+        }
+        &:nth-child(5){
+            @include pillstyle($color5);
+        }
+        &:nth-child(6){
+            @include pillstyle($color6);
+        }
+
+    }
+
+
+}

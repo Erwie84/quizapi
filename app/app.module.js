@@ -14,6 +14,11 @@ var router_1 = require('@angular/router');
 var forms_1 = require('@angular/forms');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
+var app_routing_1 = require('./app.routing');
+var form_module_1 = require('./form/form.module');
+var navigation_component_1 = require('./navigation/navigation.component');
+var question_list_component_1 = require('./question-list/question-list.component');
+var question_component_1 = require('./question/question.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,9 +29,16 @@ var AppModule = (function () {
                 http_1.HttpModule,
                 router_1.RouterModule,
                 forms_1.FormsModule,
-                forms_1.ReactiveFormsModule
+                forms_1.ReactiveFormsModule,
+                app_routing_1.routing,
+                form_module_1.NcassoFormModule
             ],
-            declarations: [app_component_1.AppComponent],
+            declarations: [
+                app_component_1.AppComponent,
+                navigation_component_1.NavigationComponent,
+                question_list_component_1.QuestionListComponent,
+                question_component_1.QuestionComponent
+            ],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

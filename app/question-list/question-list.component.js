@@ -9,17 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var QuestionListComponent = (function () {
+    function QuestionListComponent() {
     }
-    AppComponent = __decorate([
+    QuestionListComponent = __decorate([
         core_1.Component({
-            selector: 'quizapi',
-            templateUrl: './app/app.component.html'
+            selector: 'qa-questions',
+            templateUrl: './app/question-list/question-list.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], QuestionListComponent);
+    return QuestionListComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.QuestionListComponent = QuestionListComponent;
+//# sourceMappingURL=question-list.component.js.map

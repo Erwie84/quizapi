@@ -1,0 +1,70 @@
+.question-edit-box, .answer-edit-box {
+
+    width: 100%;
+    font-size: 4rem;
+    line-height: $grid-h * 3;
+    position: relative;
+    
+}
+
+.question-edit-box {
+
+    font-family: $question-box-font-family;
+    text-align: center;
+    background: $question-edit-box-color;
+    color: $question-edit-box-text-color;
+    min-height: $grid-h * 10;
+    padding: $grid-h;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    &:before {
+        margin-right: $grid-h / 2;
+        content: "\201C";
+        display: inline-block;
+        @include animate;
+    }
+
+    &:after {
+        margin-left: $grid-h / 2;
+        content: "\201D";
+        display: inline-block;
+        @include animate;
+    }
+    &:focus {
+        &:before {
+            margin-right: $grid-h;
+        }
+        &:after {
+            margin-left: $grid-h;
+        }
+    }
+}
+
+.answer-edit-box {
+    @include animate;
+    background: $answer-edit-box-color;
+    color: $answer-edit-box-text-color;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;    
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    display: flex;
+
+    > label {
+        padding: 0 $grid-h;
+        width: auto;
+        background: lighten($answer-edit-box-color, 30%);
+        color: $answer-edit-box-text-color;
+    }
+
+    > div {
+        flex: 1;
+        text-indent: $grid-h;
+    }
+
+    &:focus {
+        background: lighten($answer-edit-box-color, 10%);
+    }
+
+}

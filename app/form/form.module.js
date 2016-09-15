@@ -9,17 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var common_1 = require('@angular/common');
+var forms_1 = require('@angular/forms');
+var content_editable_directive_1 = require('./content-editable.directive');
+var NcassoFormModule = (function () {
+    function NcassoFormModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'quizapi',
-            templateUrl: './app/app.component.html'
+    NcassoFormModule = __decorate([
+        core_1.NgModule({
+            declarations: [
+                content_editable_directive_1.ContenteditableModel
+            ],
+            imports: [
+                common_1.CommonModule,
+                forms_1.FormsModule,
+                forms_1.ReactiveFormsModule
+            ],
+            exports: [
+                content_editable_directive_1.ContenteditableModel
+            ]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], NcassoFormModule);
+    return NcassoFormModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.NcassoFormModule = NcassoFormModule;
+//# sourceMappingURL=form.module.js.map

@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 10px;
+    font-family: Helvetica, Arial;
+    min-width: 100%;
+    min-height: 100%;
+    background:  $backpanel-color;
+    color: $text-color;
+}
+
+body {
+    max-width: 120rem;
+    margin: auto;
+    background: $background-color;
+}
+
+.content-panel {
+    margin: $grid-v $grid-h;
+}

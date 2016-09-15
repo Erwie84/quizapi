@@ -1,0 +1,17 @@
+.mainnav {
+    background: $nav-color;
+    color: $nav-text-color;
+    a {
+        font-size: 1.6rem;
+        line-height: $nav-height;
+        height: $nav-height;
+        padding: 0 $grid-h;
+        display: inline-block;
+        text-decoration: none;
+        color: $nav-text-color;
+        &.active {
+            background: $nav-active-color;
+            color: $nav-active-text-color;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<div class="form-group">
+    <label>Selecteer de categorie</label>
+    <ul class="pills">
+        <li>Wetenschap & Natuur</li>
+        <li>Media & TV</li>
+        <li>Taal & Literatuur</li>
+        <li>Sport & Spel</li>
+        <li>Wereld & Maatschappij</li>
+        <li>Muziek & Geluid</li>
+    </ul>
+</div>
+<div class="question-edit-box" contenteditable [ceModel]="question" (ceUpdate)="questionUpdated($event)"></div>
+<div class="answer-edit-box">
+    <label>Antwoord</label>
+    <div contenteditable [ceModel]="answer" (ceUpdate)="answerUpdated($event)">
+    </div>
+</div>

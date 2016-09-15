@@ -9,17 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var NavigationComponent = (function () {
+    function NavigationComponent() {
     }
-    AppComponent = __decorate([
+    NavigationComponent = __decorate([
         core_1.Component({
-            selector: 'quizapi',
-            templateUrl: './app/app.component.html'
+            selector: 'qa-nav',
+            templateUrl: './app/navigation/navigation.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], NavigationComponent);
+    return NavigationComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.NavigationComponent = NavigationComponent;
+//# sourceMappingURL=navigation.component.js.map

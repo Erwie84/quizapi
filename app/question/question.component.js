@@ -9,17 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var QuestionComponent = (function () {
+    function QuestionComponent() {
+        this.question = "Typ hier uw vraag ...";
+        this.answer = "";
     }
-    AppComponent = __decorate([
+    QuestionComponent.prototype.questionUpdated = function (question) {
+        this.question = question;
+    };
+    QuestionComponent.prototype.answerUpdated = function (answer) {
+        this.answer = answer;
+    };
+    QuestionComponent = __decorate([
         core_1.Component({
-            selector: 'quizapi',
-            templateUrl: './app/app.component.html'
+            selector: 'qa-question',
+            templateUrl: './app/question/question.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], QuestionComponent);
+    return QuestionComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.QuestionComponent = QuestionComponent;
+//# sourceMappingURL=question.component.js.map

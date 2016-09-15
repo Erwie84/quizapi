@@ -1,7 +1,7 @@
 // Sass configuration
 {
     "version": "0.1.0",
-    "command": "node-sass",
+    "command": "sass",
     "isShellCommand": true,
-    "args": ["style/style.scss", "style/style.css", "--watch"]
+    "args": ["./style/", "--watch"]
 }

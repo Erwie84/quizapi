@@ -1,0 +1,11 @@
+@mixin animateProp($property, $speed){
+	-webkit-transition: $property $speed cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	   -moz-transition: $property $speed cubic-bezier(0.420, 0.000, 0.580, 1.000);
+		-ms-transition: $property $speed cubic-bezier(0.420, 0.000, 0.580, 1.000);
+		 -o-transition: $property $speed cubic-bezier(0.420, 0.000, 0.580, 1.000);
+			transition: $property $speed cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+}
+
+@mixin animate {
+	@include animateProp(all, 300ms);
+}
